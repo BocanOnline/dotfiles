@@ -1,3 +1,5 @@
+# BocanOnline's Development Configuration
+
 This is the repository for my development environment config for me and anybody
 who might get some use from it. It includes my dotfiles and some instructions
 below on how to replicate my config, just in case my macbook gets struck by a 
@@ -26,41 +28,52 @@ least when trying to follow tutorials where the configs are all in Lua). So, I
 found a pause point in my current project and set out to redesign my config; 
 this repo is the result.
 
+## Context
+
+My daily driver is macOS. I have and intend to use Linux more as a progress,
+however this configuration was all made using macOS and has not yet been
+tested on Linux or Windows. Presumably, migrating this config for Linux 
+'should' be fairly straightforward.
+
+On macOS, all of these files are located in $XDG_CONFIG_HOME, which typically
+resolve to ~/.config. There are a few config files that need to be located
+at $XDG_HOME (~); these symlinks are discussed below.
+
 ## Inspiration and How-to's
 
 Below are a few of the YouTubers who definitely made this config a fun and 
 relatively easy process through their expertise and high production content.
 
 ### ThePrimeagen
-[NeoVim Config from Scratch]
+- [NeoVim Config from Scratch]
 <https://www.youtube.com/watch?v=w7i4amO_zaE&t=1257s>
 
 ### TJ Devries
-[Lazy Plugin Manager]
+- [Lazy Plugin Manager]
 <https://www.youtube.com/watch?v=_kPg0VBRxJc>
-[Treesitter]
+- [Treesitter]
 <https://www.youtube.com/watch?v=w7i4amO_zaE&t=1257s>
-[Telescope]
+- [Telescope]
 <https://www.youtube.com/watch?v=iqdCshrIKIg>
-[Autocompletion]
+- [Autocompletion]
 <https://www.youtube.com/watch?v=Q0cvzaPJJas>
 
 ### typecraft
-[NeoVim Config from Scratch | EP 1]
+- [NeoVim Config from Scratch | EP 1]
 <https://www.youtube.com/watch?v=zHTeCSVAFNY&t=584s>
-[NeoVim Config from Scratch | EP 2]
+- [NeoVim Config from Scratch | EP 2]
 <https://www.youtube.com/watch?v=4zyZ3sw_ulc>
-[NeoVim Config from Scratch | EP 3]
+- [NeoVim Config from Scratch | EP 3]
 <https://www.youtube.com/watch?v=S-xzYgTLVJE&t=369s>
 
 ### Josean Martinez
-[Raycast]
+- [Raycast]
 <https://www.youtube.com/watch?v=DBifQv9AYhc&t=126s>
-[LSP]
+- [LSP]
 <https://www.youtube.com/watch?v=oBiBEx7L000&t=910s>
 
 ### smnatale
-[LSP]
+- [LSP]
 <https://www.youtube.com/watch?v=ScIjavsi7LE>
 
 ## Applications
@@ -117,27 +130,21 @@ KEYMAPS.md is in progress.
 
 ## Look and Feel
 
-### macOS Settings
 
-#### Animations
-#### Desktop
-
-### Terminal Settings
-
-#### Cursor
+### Cursor
 
 I use the block cursor set in the Terminal Settings as well as in my Neovim
 configuration. Why? Because that's what ThePrimeagen does! But also, after I 
-tried it out, I found I really liked it.
+tried it out, I found I really liked it. This style cursor is default for
+the Ghostty terminal emulator.
 
-#### Font and Font Size
+### Font and Font Size
 
 I am using the SpaceMono Nerd Font found at 
-https://www.nerdfonts.com/font-downloads.
-I found for my screen and setup a font size of 13 in the Terminal settings 
-looks the best.
-
-#### Background
+https://www.nerdfonts.com/font-downloads. I like this font a lot, but found
+it has ligatures and I could not find a version without this feature. I ended
+up swapping my terminal emulator from the Apple Terminal to Ghostty so that I
+could configure it to disable ligatures.
 
 ### Catppuccin
 
@@ -160,6 +167,7 @@ too much time looking into it after I discovered catppuccin.
 
 ## TODO
 
+- add KEYMAPS.md to display keymaps for system-level -> application-level
 - add notion plugin to assist with dev tasks and git commit messages
 - add opencode plugin for AI assisted coding
 - add docker/podman for build automation
