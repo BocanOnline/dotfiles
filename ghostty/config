@@ -1,0 +1,5 @@
+theme = catppuccin-mocha.conf
+font-family ="SpaceMono Nerd Font Mono"
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
