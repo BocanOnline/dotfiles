@@ -16,21 +16,38 @@ export NVM_DIR="$XDG_CONFIG_HOME/nvm"
 export NPM_CONFIG_USERCONFIG="$HOME/.config/npm/npmrc"
 export NPM_CONFIG_CACHE="$HOME/.config/npm/cache"
 export EZA_CONFIG_DIR="$XDG_CONFIG_HOME/eza"
+export BO_CONFIG="$XDG_CONFIG_HOME/bo"
+export FZF_CONFIG="$XDG_CONFIG/fzf"
+export PATH="$HOME/.venvs/bocan/bin:$PATH"
 
 export HISTFILE="$XDG_CONFIG_HOME/zsh/zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
 
 ################################################################################
-# Initialize Starship
+# Application Initialization
 ################################################################################
 eval "$(starship init zsh)"
-
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"
+if [ -f "$BO_CONFIG/bo.zsh" ]; then
+    source "$BO_CONFIG/bo.zsh"
+fi
+if [ -f "$FZF_CONFIG/fzf.zsh" ]; then
+    source "$FZF_CONFIG/fzf.zsh"
+fi
 
+source <(fzf --zsh)
 ################################################################################
 # Custom User Alias
 ################################################################################
 alias vi="nvim"
 alias vim="nvim"
-alias ls="eza -1 --no-quotes"
+alias ls="eza -1 --no-quotes --group-directories-first"
+alias python="python3"
+alias pip="pip3"
+alias bo="bo-open"
+alias bh="bo-help"
+alias bs="bo-setup"
+alias bn="bo-new"
+alias bc="bo-clean"
+alias bg="bo-status"

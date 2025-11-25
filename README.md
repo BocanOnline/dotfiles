@@ -87,13 +87,14 @@ relatively easy process through their expertise and high production content.
 - [Tmux] <https://github.com/tmux/tmux>
 - [Neovim] <https://github.com/neovim/neovim>
 - [eza] <https://github.com/eza-community/eza>
+- [fzf] <https://github.com/junegunn/fzf>
 
 ### Other Useful Terminal Applications
 
-- Homebrew
-- doctl
-- git
-- gh
+- brew  | package manger of choice
+- doctl | interact with digitalocean from the terminal
+- git   | version control application of choice
+- gh    | interact with github from the terminal
 
 ## Plugins
 
@@ -164,6 +165,8 @@ too much time looking into it after I discovered catppuccin.
 <https://github.com/catppuccin/starship>
 - [eza] 
 <https://github.com/eza-community/eza-themes/blob/main/themes/catppuccin.yml>
+- [fzf]
+<https://github.com/catppuccin/fzf>
 
 ## TODO
 
@@ -172,3 +175,4 @@ too much time looking into it after I discovered catppuccin.
 - add opencode plugin for AI assisted coding
 - add docker/podman for build automation
 - add plugin to coordinate keymaps between neovim and tmux
+- configure tmux sessions for easy project start/continue
