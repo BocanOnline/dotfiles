@@ -170,9 +170,9 @@ too much time looking into it after I discovered catppuccin.
 
 ## TODO
 
-- add KEYMAPS.md to display keymaps for system-level -> application-level
-- add notion plugin to assist with dev tasks and git commit messages
-- add opencode plugin for AI assisted coding
-- add docker/podman for build automation
-- add plugin to coordinate keymaps between neovim and tmux
-- configure tmux sessions for easy project start/continue
+- [ ] add KEYMAPS.md to display keymaps for system-level -> application-level
+- [ ] add notion plugin to assist with dev tasks and git commit messages
+- [ ] add opencode plugin for AI assisted coding
+- [ ] add docker/podman for build automation
+- [ ] add plugin to coordinate keymaps between neovim and tmux
+- [X] configure tmux sessions for easy project start/continue

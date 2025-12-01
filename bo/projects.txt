@@ -5,6 +5,7 @@
 /Users/Buchanan/Developer/BocanOnline/PythonGenerator
 /Users/Buchanan/Developer/BocanOnline/PythonPlayground
 /Users/Buchanan/Developer/BocanOnline/PythonUtilities
+/Users/Buchanan/Developer/BocanOnlineTemplates/c
 /Users/Buchanan/Developer/BocanStudio/CraftCart
 /Users/Buchanan/Developer/BocanStudio/LaunchPad
 /Users/Buchanan/Developer/BocanStudio/OppVest

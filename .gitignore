@@ -5,8 +5,11 @@ tmux/plugins
 zsh/zsh_history
 
 docker/
+gh/
 neofetch/
 npm/
 nvm/
 vim/
 xbuild/
+
+!bo/templates/docker/

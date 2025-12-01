@@ -27,7 +27,7 @@ SAVEHIST=10000
 ################################################################################
 # Application Initialization
 ################################################################################
-eval "$(starship init zsh)"
+val "$(starship init zsh)"
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && . "$(brew --prefix nvm)/nvm.sh"
 if [ -f "$BO_CONFIG/bo.zsh" ]; then
     source "$BO_CONFIG/bo.zsh"
@@ -42,7 +42,7 @@ source <(fzf --zsh)
 ################################################################################
 alias vi="nvim"
 alias vim="nvim"
-alias ls="eza -1 --no-quotes --group-directories-first"
+alias ls="eza -1 --no-quotes --group-directories-first --sort=type"
 alias python="python3"
 alias pip="pip3"
 alias bo="bo-open"
